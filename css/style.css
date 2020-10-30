@@ -18,6 +18,21 @@ body {
   font-family: "Barlow", sans-serif;
 }
 
+@font-face {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  src: url("../fonts/BarlowCondensed-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  src: url("../fonts/BarlowCondensed-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  src: url("../fonts/Barlow-Regular.ttf") format("truetype");
+}
 .attribution {
   font-size: 11px;
   text-align: center;

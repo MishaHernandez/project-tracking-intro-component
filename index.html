@@ -5,26 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet"> -->
   
   <title>Frontend Mentor | Project tracking intro component</title>
 
 </head>
 <body>
-  Product
-  Features
-  Pricing
-  Login
+  
+  <!-- navbar and brand -->
+  <div class="navbar-brand">
+    <img class="brand" class="logo" src="images/logo.svg" alt="Logo">
+    <div class="navbar">
+      <img class="navbar__menu-icon" src="images/icon-hamburger.svg" alt="menu icon">
+      <nav>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">Product</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Features</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Pricing</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
-  New
-  Monograph Dashboard
+  <img class="illustration" src="images/illustration-devices.svg" alt="Illustration devices">
 
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
+  <!-- main information -->
+  <div class="menu-info">
+    <a class="menu-info__link menu-info__link--active" href="#">New</a>
+    <a class="menu-info__link" href="#">Monograph</a>
+    <a class="menu-info__link" href="#">Dashboard</a>
+  </div>
 
-  Schedule a demo
-  to see a live preview
+  <h1 class="main-title">Powerful insights into your team</h1>
+  <p class="main-paragraph">Project planning and time tracking for agile teams</p>
+
+  <a class="main-button main-button--active" href="#">Schedule a demo</a>
+  <a class="main-button" href="#">to see a live preview</a>
   
   <footer>
     <p class="attribution">
