@@ -4,6 +4,11 @@ html {
 body {
     box-sizing: inherit;
     margin: 0;
+    padding: 38px 32px;
     font-size: 18px;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: normal;
+}
+a {
+    text-decoration: none;
 }

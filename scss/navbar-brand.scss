@@ -1,0 +1,17 @@
+.navbar-brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand {
+    width: 24px;
+    height: 24px;
+}
+.navbar {
+    &__menu-icon {
+        vertical-align: middle;
+    }
+    &__menu {
+        display: none;
+    }
+}

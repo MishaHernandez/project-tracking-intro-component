@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet"> -->
-  
   <title>Frontend Mentor | Project tracking intro component</title>
 
 </head>
@@ -21,11 +22,11 @@
     <div class="navbar">
       <img class="navbar__menu-icon" src="images/icon-hamburger.svg" alt="menu icon">
       <nav>
-        <ul class="menu">
-          <li class="menu__item"><a class="menu__link" href="#">Product</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Features</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Pricing</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Login</a></li>
+        <ul class="navbar__menu">
+          <li class="navbar__menu-item"><a class="navbar__menu-link" href="#">Product</a></li>
+          <li class="navbar__menu-item"><a class="navbar__menu-link" href="#">Features</a></li>
+          <li class="navbar__menu-item"><a class="navbar__menu-link" href="#">Pricing</a></li>
+          <li class="navbar__menu-item"><a class="navbar__menu-link" href="#">Login</a></li>
         </ul>
       </nav>
     </div>
@@ -34,17 +35,19 @@
   <img class="illustration" src="images/illustration-devices.svg" alt="Illustration devices">
 
   <!-- main information -->
-  <div class="menu-info">
-    <a class="menu-info__link menu-info__link--active" href="#">New</a>
-    <a class="menu-info__link" href="#">Monograph</a>
-    <a class="menu-info__link" href="#">Dashboard</a>
+  <div class="main">
+    <div class="main__info">
+      <a class="main__info-link main__info-link--active" href="#">New</a>
+      <a class="main__info-link" href="#">Monograph</a>
+      <a class="main__info-link" href="#">Dashboard</a>
+    </div>
+  
+    <h1 class="main__title">Powerful insights into your team</h1>
+    <p class="main__paragraph">Project planning and time tracking for agile teams</p>
+  
+    <a class="main__button main__button--active" href="#">Schedule a demo</a>
+    <a class="main__button" href="#">to see a preview</a>
   </div>
-
-  <h1 class="main-title">Powerful insights into your team</h1>
-  <p class="main-paragraph">Project planning and time tracking for agile teams</p>
-
-  <a class="main-button main-button--active" href="#">Schedule a demo</a>
-  <a class="main-button" href="#">to see a live preview</a>
   
   <footer>
     <p class="attribution">
