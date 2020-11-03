@@ -1,15 +1,20 @@
 .navbar-brand {
+    width: 82.5%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    
 }
 .brand {
     width: 24px;
     height: 24px;
 }
 .navbar {
+    display: flex;
+    align-items: center;
     &__menu-icon {
-        vertical-align: middle;
+        // vertical-align: middle;
     }
     &__menu {
         display: none;
