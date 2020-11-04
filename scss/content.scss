@@ -60,10 +60,12 @@
             color: var(--light-grayish-blue);
             border-radius: 6px;
             margin-right: 20px;
-        }
-        &:hover {
-            opacity: .6;
-        }
+            @include desktop {
+                &:hover {
+                    opacity: .6;
+                }
+            }
+        }        
     }
     @include desktop {
         margin: 0;

@@ -28,29 +28,71 @@
     }
     &__menu {
         display: none;
+        position: fixed;
+        z-index: 10;
+        width: 82.5%;
+        top: 100px;
+        left: 32px;
+        margin: 0;
+        box-sizing: border-box;
+        padding: 1rem 1.5rem;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0 4px 8px lightgray;
         @include desktop {
             display: flex;
+            position: relative;
+            z-index: initial;
+            width: initial;
+            top: initial;
+            left: initial;
+            text-align: left;
+            background: none;
+            box-shadow: none;
         }
         &-item {
             &:last-child::before {
-                content: "\2022";
-                color: var(--grayish-blue);
-                margin-left: 1rem;
-                margin-right: 1rem;
+                display: block;
+                content: "";
+                width: 100%;
+                height: 2px;
+                background-color: var(--light-grayish-blue);
+                margin-top: 8px;
+                margin-bottom: 8px;
+                @include desktop {
+                    display: inline;
+                    content: "\2022";
+                    width: initial;
+                    height: initial;
+                    background: none;
+                    color: var(--grayish-blue);
+                    margin: 0 1rem;
+                }
             }
         }
+
         &-link {
+            display: block;
             text-transform: uppercase;
-            padding: 8px 1rem;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 700;
+            padding: 12px 0;
             color: var(--very-dark-blue);
+            letter-spacing: 1px;
             &--active {
                 color: var(--grayish-blue);
             }
-            &:hover {
-                text-decoration: underline;
+            @include desktop {
+                display: initial;
+                font-size: 16px;
+                padding: 8px 1rem;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }
+}
+.show-menu {
+    display: block;
 }
