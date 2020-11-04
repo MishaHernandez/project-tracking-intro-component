@@ -2,6 +2,13 @@
     height: 248px;
     margin-left: -24px;
     margin-bottom: 5rem;
+    @include desktop {
+        order: 2;
+        margin: 0;
+        height: 90%;
+        position: absolute;
+        left: 640px;
+    }
 }
 .main {
     &__info {
@@ -27,15 +34,18 @@
         line-height: 1;
         margin-top: 1.4rem;
         margin-bottom: 1rem;
+        @include desktop {
+            font-size: 4rem;
+        }
     }
     &__paragraph {
         font-family: 'Barlow', sans-serif;
         font-size: 1.2rem;
         color: var(--dark-grayish-blue);
         margin-bottom: 2.2rem;
+        width: 300px;
     }
     &__button {
-        // padding: 14px 18px;
         word-spacing: 1.5px;
         letter-spacing: 2px;
         text-transform: uppercase;
@@ -49,8 +59,15 @@
             font-weight: 700;
             color: var(--light-grayish-blue);
             border-radius: 6px;
-            // test
             margin-right: 20px;
         }
+        &:hover {
+            opacity: .6;
+        }
+    }
+    @include desktop {
+        margin: 0;
+        order: 1;
+        width: 50%;
     }
 }
