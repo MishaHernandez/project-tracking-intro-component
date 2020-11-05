@@ -4,7 +4,8 @@
     margin-bottom: 5rem;
     @include desktop {
         order: 2;
-        margin: 0;
+        margin-left: -50px;
+        margin-bottom: 0;
         height: 90%;
         position: absolute;
         left: 640px;

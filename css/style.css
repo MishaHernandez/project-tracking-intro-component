@@ -194,7 +194,8 @@ main {
 @media (min-width: 1160px) {
   .illustration {
     order: 2;
-    margin: 0;
+    margin-left: -50px;
+    margin-bottom: 0;
     height: 90%;
     position: absolute;
     left: 640px;
